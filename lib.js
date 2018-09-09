@@ -14,24 +14,51 @@ var doc = document;
 var div = elem.bind(0,'div');
 
 
-// Returns a random number between low (inclusive) and high (exclusive).
+/**
+ * Returns a random number between low (inclusive) and high (exclusive).
+ *
+ * @param  {[type]} low  [description]
+ * @param  {[type]} high [description]
+ *
+ * @return {[type]}      [description]
+ */
 function rint(low,high) {
 	return floor(low+Math.random()*(high-low));
 }
 
-// Returns an array of integers from low (inclusive) to high (exclusive).
-function range(low,high) {
+/**
+ * Returns an array of integers from low (inclusive) to high (exclusive).
+ *
+ * @param  {Number} low  [description]
+ * @param  {Number} high [description]
+ *
+ * @return {[type]}      [description]
+ */
+function range(low, high) {
 	var r = [];
 	for (var i = low; i < high; i++)
 		r.push(i);
 	return r;
 }
 
-// Identity function (useful as a default for callback accepting functions like min).
+/**
+ * Identity function (useful as a default for callback accepting functions like min).
+ *
+ * @param  {[type]} x [description]
+ *
+ * @return {[type]}   [description]
+ */
 function identity(x) { return x; }
 
-// Creates a deep copy of an object, handling nested objects and arrays. Depth controls how deep
-// the copy goes - the number of nesting levels that should be replicated.
+/**
+ * Creates a deep copy of an object, handling nested objects and arrays. Depth controls how deep
+ * the copy goes - the number of nesting levels that should be replicated.
+ *
+ * @param  {[type]} obj   [description]
+ * @param  {[type]} depth [description]
+ *
+ * @return {[type]}       [description]
+ */
 function deepCopy(obj, depth) {
     if ((!depth) || (typeof obj != 'object')) return obj;
 
@@ -42,7 +69,15 @@ function deepCopy(obj, depth) {
     return copy;
 }
 
-// Clamps a number - if it's lower than low or higher than high, it's brought into range.
+/**
+ * Clamps a number - if it's lower than low or higher than high, it's brought into range.
+ *
+ * @param  {[type]} number
+ * @param  {[type]} low
+ * @param  {[type]} high
+ *
+ * @return {[type]}
+ */
 function clamp(number, low, high) {
     return (number < low) ? low : ((number > high) ? high : number);
 }
