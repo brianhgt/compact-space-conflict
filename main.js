@@ -11,6 +11,15 @@ var PLAYER_TEMPLATES = [
     {i:3, n: 'Emerald', l: '#9d9', d:'#262', h: '#bfb', hd:'#484'}
 ];
 
+var defaultSetup = {
+    p: [PLAYER_HUMAN, PLAYER_AI, PLAYER_AI, PLAYER_OFF],
+    l: AI_NICE,
+    s: true,
+    tc: 12,
+    tt: {}
+};
+
+var gameSetup = defaultSetup;
 
 // === Constants for setup screen
 var PLAYER_OFF = 0, PLAYER_HUMAN = 1, PLAYER_AI = 2;
@@ -62,10 +71,10 @@ function prepareMainScreen(gameState) {
 // Prepares the whole sidebar on the left for gameplay use.
 function prepareIngameUI(gameState) {
     // turn counter
-    var html = div({i: 'tc', c: 'sc'});
+    var html = div({i: 'm-turn-info', c: 'sc'});
 
     // player box area
-    html += div({i: 'pd', c: 'sc un'}, map(gameState.p, function(player) {
+    html += div({i: 'm-players', c: 'sc un'}, map(gameState.p, function(player) {
         var pid = player.i;
         return div({
             i: 'pl' + pid,
@@ -85,4 +94,34 @@ function prepareIngameUI(gameState) {
 
     // show stat box and undo button
     map(['mv', 'und', 'end'], show);
+}
+
+function makeInitialState(setup) {
+    var players = [];
+    map(setup.p, function(playerController, playerIndex) {
+        if (playerController == PLAYER_OFF) return;
+        var player = deepCopy(PLAYER_TEMPLATES[playerIndex], 1);
+
+        // set up as AI/human
+        player.u = (playerController == PLAYER_HUMAN) ? uiPickMove : aiPickMove;
+        // pick a random personality if we're AI
+        if (playerController == PLAYER_AI) {
+            player.p = deepCopy(AI_PERSONALITIES[rint(0, AI_PERSONALITIES.length)], 2);
+        }
+
+        player.i = players.length;
+        players.push(player);
+    });
+
+    var regions = generateMap(players.length);
+    var gameState = {
+        p: players,
+        r: regions,
+        o: {}, t: {}, s: {}, c: {}, l: {},
+        m: {t: 1, p: 0, m: MOVE_ARMY, l: movesPerTurn}
+    };
+}
+
+function generateMap(playerCount) {
+    //TODO
 }

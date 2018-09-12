@@ -1,1 +1,23 @@
 
+#content {
+    position: relative;
+    margin: auto;
+}
+
+#menu {
+    position: absolute;
+}
+#menu {
+    left: 1%; right: 78.2%;
+    top: 13.5%; bottom: 13.5%;
+    color: white;
+    border: 1px solid #333;
+    background: #111;
+    font-size: 110%;
+}
+#map {
+    right: 0;
+    left: 20%;
+    top: 0;
+    bottom: 0;
+}
