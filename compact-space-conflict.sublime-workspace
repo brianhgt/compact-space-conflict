@@ -8,43 +8,34 @@
 	"buffers":
 	[
 		{
-			"contents": "function(n)\nfunction rint(low,high)\nfunction range(low,high)\nfunction identity(x)\nfunction deepCopy(obj, depth)\nfunction(value, key)\nfunction clamp(number, low, high)\nfunction now()\nfunction template(text, replacement)\nfunction map(seq,fn)\nfunction forEachProperty(obj,fn)\nfunction for2d(x1,y1,x2,y2,fn)\nfunction(x)\nfunction $(id)\nfunction elem(tag,attrs,contents)\nfunction append(containerId, newHTML)\nfunction setTransform(elem, value)\nfunction onClickOrTap(elem, fn)\nfunction(event)\nfunction showOrHide(elementId, visible)\nfunction hide(elementId)\nfunction show(elementId)\nfunction toggleClass(element, className, on)\nfunction min(seq, keyFn)\nfunction(e)\nfunction max(seq, keyFn)\nfunction(elem)\nfunction sum(seq, keyFn)\nfunction(elem)\nfunction contains(seq, elem)\nfunction pairwise(array, fn)\nfunction(elem1, index)\nfunction(elem2)\nfunction shuffle(seq)\nfunction(_, index)\nfunction generateMap(playerCount)\nfunction()\nfunction shrink(bounds)\nfunction overlaps(bounds)\nfunction(x,y)\nfunction makeRegionAt(index, bounds)\nfunction(i)\nfunction(i)\nfunction(x,y)\nfunction perturbedPoint(x,y)\nfunction fillNeighbourLists()\nfunction(x,y)\nfunction(d)\nfunction centerOfWeight(points)\nfunction(p)\nfunction transformPoints(points, xm, ym, xd, yd)\nfunction(p)\nfunction projectPoint(p)\nfunction gradientStop(percent, color)\nfunction makeGradient(id, light, dark)\nfunction makePolygon(points, id, fill, stroke, clip)\nfunction showMap(container, gameState)\nfunction(player, index)\nfunction(region, index)\nfunction makeClipPaths()\nfunction(region, index)\nfunction makeRegionPolys(idPrefix, gradient, xm, ym, xd, yd, stroke, clip)\nfunction(region, index)\nfunction makeTemples()\nfunction(temple)\nfunction prepareIngameUI(gameState)\nfunction(player)\nfunction invokeUICallback(object, type, event)\nfunction uiPickMove(player, state, reportMoveCallback)\nuiCallbacks.c = function(region)\nuiCallbacks.t = function(region)\nuiCallbacks.s = function(soldier)\nfunction(region)\nuiCallbacks.b = function(which)\nuiCallbacks.un = function()\nfunction setCleanState()\nfunction makeUpgradeButtons(temple)\nfunction(upgrade)\nfunction oneAtATime(duration, fn)\nfunction runOneTask()\nfunction()\nfunction updateMapDisplay(gameState)\nfunction(soldiers, regionIndex)\nfunction(div, id)\nfunction()\nfunction updateRegionDisplay(region)\nfunction(point)\nfunction updateTooltips()\nfunction(neighbour)\nfunction showTooltipOver(region, text, width)\nfunction()\nfunction updateTempleDisplay(temple)\nfunction updateSoldierDisplay(region, soldier, index)\nfunction updateSoldierTooltips()\nfunction(region, regionIndex)\nfunction(soldier)\nfunction updateFloatingText()\nfunction(floater)\nfunction updateIngameUI(gameState)\nfunction(player, index)\nfunction updateButtons(buttons)\nfunction(button, index)\nfunction updateDisplay(gameState)\nfunction showBanner(background, text, delay)\nfunction()\nfunction()\nfunction()\nfunction()\nfunction()\nfunction transform(offset)\nfunction spawnParticle(x, y, vx, vy, color)\nfunction floatAway(elem, vx, vy)\nfunction()\nfunction()\nfunction preserveAspect()\nfunction()\nfunction makeInitialState(setup)\nfunction(playerController, playerIndex)\nfunction distance(regionA, regionB)\nfunction (neighbour)\nfunction distanceScore(regions)\nfunction randomRegion()\nfunction setupTemples()\nfunction(player, index)\nfunction()\nfunction(player, index)\nfunction()\nfunction()\nfunction(region)\nfunction updatedDistances(newTemple)\nfunction(home, index)\nfunction templeScore(newTemple)\nfunction putTemple(region, soldierCount)\nfunction aiPickMove(player, state, reportMoveCallback)\nfunction shouldBuildSoldier(player, state)\nfunction force(state, player)\nfunction upgradeToBuild(player, state)\nfunction(temple)\nfunction templeDangerousness(state, temple)\nfunction buildSoldierAtBestTemple(player, state)\nfunction minMaxDoSomeWork(node)\nfunction minMaxReturnFromChild(node, child)\nfunction performMinMax(forPlayer, fromState, depth, moveCallback)\nfunction doSomeWork()\nfunction possibleMoves(state)\nfunction addArmyMove(source, dest, count)\nfunction(region)\nfunction(neighbour)\nfunction slidingBonus(state, startOfGameValue, endOfGameValue, dropOffPoint)\nfunction heuristicForPlayer(player, state)\nfunction adjustedRegionValue(region)\nfunction (region)\nfunction regionFullValue(state, region)\nfunction regionThreat(state, player, region)\nfunction(neighbour)\nfunction(candidate)\nfunction(r)\nfunction regionOpportunity(state, player, region)\nfunction(neighbour)\nfunction pickMove(player, state, reportMoveCallback)\nfunction makeMove(state, move)\nfunction copyState(state, simulatingPlayer)\nfunction playOneMove(state)\nfunction()\nfunction(move)\nfunction afterMoveChecks(state)\nfunction(player)\nfunction(region)\nfunction(p, r)\nfunction addSoldiers(state, region, count)\nfunction()\nfunction moveSoldiers(state, fromRegion, toRegion, incomingSoldiers)\nfunction (soldier)\nfunction ()\nfunction randomNumberForFight(index)\nfunction(index)\nfunction(soldier)\nfunction()\nfunction battleAnimationKeyframe(state, delay, soundCue, floatingTexts)\nfunction buildUpgrade(state, region, upgrade)\nfunction nextTurn(state)\nfunction(temple, regionIndex)\nfunction determineGameWinner(state)\nfunction(player)\nfunction showEndGame(state)\nfunction()\nfunction soldierCount(state, region)\nfunction income(state, player)\nfunction(temple)\nfunction regionHasActiveArmy(state, player, region)\nfunction regionCount(state, player)\nfunction(region)\nfunction temples(state, player)\nfunction(temple, regionIndex)\nfunction activePlayer(state)\nfunction owner(state, region)\nfunction cash(state, player)\nfunction rawUpgradeLevel(state, player, upgradeType)\nfunction(temple)\nfunction upgradeLevel(state, player, upgradeType)\nfunction(region)\nfunction totalSoldiers(state, player)\nfunction(region)\nfunction soldierCost(state)\nfunction templeInfo(state, temple)\nfunction undoEnabled(gameState)\nfunction performUndo(currentState)\nfunction getSetupFromStorage()\nfunction (value, name)\nfunction storeSetupInLocalStorage()\nfunction prepareSetupUI()\nfunction(player)\nfunction(playerIndex, buttonIndex)\nfunction(index)\nfunction buttonPanel(title, buttonIdPrefix, buttonLabels, additionalProperties)\nfunction(label, index)\nfunction(value, name)\nfunction runSetupScreen()\nuiCallbacks.b = function(which)\nuiCallbacks.sb = function(event)\nuiCallbacks.ai = function(aiLevel)\nuiCallbacks.tc = function(turnCount)\nfunction setupValid()\nfunction(playerState)\nfunction updateBottomButtons()\nfunction updateConfigButtons()\nfunction(controller, playerIndex)\nfunction(buttonIndex)\nfunction(index)\nfunction regenerateMap()\nfunction setupTitleScreen()\nfunction(id)\nfunction()\nfunction switchTutorialCard(direction)\nfunction setTitleScreenVisibility(visible)\nfunction()\nfunction ()\nfunction lerp(alpha, from, to)\nfunction adsr(a, d, s, r, sl, fn)\nfunction(dt)\nfunction wSin(pitch)\nfunction(dt)\nfunction wSlide(from, to, time, fn)\nfunction(dt)\nfunction wRamp(from, to, after, fn)\nfunction(dt)\nfunction wNotes(notes)\nfunction(note)\nfunction(dt)\nfunction(note)\nfunction makeBuffer(fn, len, vol)\nfunction setupAudio()\nfunction playSound(sound)\nfunction updateSoundControls()\nfunction toggleSound()\nwindow.onload = function()\nfunction()",
+			"contents": "function runSetupScreen()\nfunction regenerateMap()\nfunction prepareSetupUI()\nfunction updateConfigButtons()\nfunction prepareMainScreen(gameState)\nfunction prepareIngameUI(gameState)\nfunction(player)\nfunction makeInitialState(setup)\nfunction(playerController, playerIndex)\nfunction generateMap(playerCount)",
 			"settings":
 			{
-				"buffer_size": 7123,
+				"buffer_size": 305,
 				"line_ending": "Windows",
 				"name": "𝌆 Outline",
 				"scratch": true
 			}
 		},
 		{
-			"file": "lib.js",
-			"settings":
-			{
-				"buffer_size": 6580,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "\n\n// === The possible move types\nvar MOVE_ARMY = 1, BUILD_ACTION = 2, END_TURN = 3;\n\n// === Player properties\nvar PLAYER_TEMPLATES = [\n    {i:0, n: 'Amber', l: '#fd8', d:'#960', h: '#fd8', hd:'#a80'},\n    {i:1, n: 'Crimson', l: '#f88', d:'#722', h: '#faa', hd:'#944'},\n    {i:2, n: 'Lavender', l: '#d9d', d:'#537', h: '#faf', hd:'#759'},\n    {i:3, n: 'Emerald', l: '#9d9', d:'#262', h: '#bfb', hd:'#484'}\n];\n\n\n// === Constants for setup screen\nvar PLAYER_OFF = 0, PLAYER_HUMAN = 1, PLAYER_AI = 2;\n\nvar UNLIMITED_TURNS = 1000000, TURN_COUNTS = [9, 12, 15, UNLIMITED_TURNS];\n\n// == Application \"states\"\nvar APP_SETUP_SCREEN = 0, APP_INGAME = 1;\n\n\n// === Game Setup\n\nfunction runSetupScreen() {\n    // we're in setup now\n    appState = APP_SETUP_SCREEN;\n\n    // generate initial setup and game state\n    var game;\n    regenerateMap();\n\n    // prepare UI\n    prepareSetupUI();\n    updateConfigButtons();\n\n    //TODO change from skip\n    prepareMainScreen();\n}\n\nfunction regenerateMap() {\n    //TODO\n}\n\nfunction prepareSetupUI() {\n    //TODO\n}\n\nfunction updateConfigButtons() {\n    //TODO\n}\n\nfunction prepareMainScreen() {\n    // we're in setup now\n    appState = APP_INGAME;\n\n    \n\n\n}\n\n",
+			"contents": "var unitDivsById = {};\n\n// === The possible move types\nvar MOVE_ARMY = 1, BUILD_ACTION = 2, END_TURN = 3;\n\n// === Player properties\nvar PLAYER_TEMPLATES = [\n    {i:0, n: 'Amber', l: '#fd8', d:'#960', h: '#fd8', hd:'#a80'},\n    {i:1, n: 'Crimson', l: '#f88', d:'#722', h: '#faa', hd:'#944'},\n    {i:2, n: 'Lavender', l: '#d9d', d:'#537', h: '#faf', hd:'#759'},\n    {i:3, n: 'Emerald', l: '#9d9', d:'#262', h: '#bfb', hd:'#484'}\n];\n\nvar defaultSetup = {\n    p: [PLAYER_HUMAN, PLAYER_AI, PLAYER_AI, PLAYER_OFF],\n    l: AI_NICE,\n    s: true,\n    tc: 12,\n    tt: {}\n};\n\nvar gameSetup = defaultSetup;\n\n// === Constants for setup screen\nvar PLAYER_OFF = 0, PLAYER_HUMAN = 1, PLAYER_AI = 2;\n\nvar UNLIMITED_TURNS = 1000000, TURN_COUNTS = [9, 12, 15, UNLIMITED_TURNS];\n\n// == Application \"states\"\nvar APP_SETUP_SCREEN = 0, APP_INGAME = 1;\n\n////\n////\n//Game Setup\n\nfunction runSetupScreen() {\n    // we're in setup now\n    appState = APP_SETUP_SCREEN;\n\n    // generate initial setup and game state\n    var game;\n    regenerateMap();\n\n    // prepare UI\n    prepareSetupUI();\n    updateConfigButtons();\n\n    //TODO change from skip\n    prepareMainScreen(game);\n}\n\nfunction regenerateMap() {\n    //TODO\n}\n\nfunction prepareSetupUI() {\n    //TODO\n}\n\nfunction updateConfigButtons() {\n    //TODO\n}\n\nfunction prepareMainScreen(gameState) {\n    // we're in setup now\n    appState = APP_INGAME;\n\n    prepareIngameUI(gameState);\n\n}\n\n// Prepares the whole sidebar on the left for gameplay use.\nfunction prepareIngameUI(gameState) {\n    // turn counter\n    var html = div({i: 'm-turn-info', c: 'sc'});\n\n    // player box area\n    html += div({i: 'm-players', c: 'sc un'}, map(gameState.p, function(player) {\n        var pid = player.i;\n        return div({\n            i: 'pl' + pid,\n            c: 'pl',\n            style: 'background: ' + player.d\n        }, player.n +\n            div({c: 'ad', i: 'pr' + pid}) +\n            div({c: 'ad', i: 'pc' + pid})\n        );\n    }).join(''));\n\n    // info box\n    html += div({c: 'sc un ds', i: 'in'});\n\n    // set it all\n    $('d').innerHTML = html;\n\n    // show stat box and undo button\n    map(['mv', 'und', 'end'], show);\n}\n\nfunction makeInitialState(setup) {\n    var players = [];\n    map(setup.p, function(playerController, playerIndex) {\n        if (playerController == PLAYER_OFF) return;\n        var player = deepCopy(PLAYER_TEMPLATES[playerIndex], 1);\n\n        // set up as AI/human\n        player.u = (playerController == PLAYER_HUMAN) ? uiPickMove : aiPickMove;\n        // pick a random personality if we're AI\n        if (playerController == PLAYER_AI) {\n            player.p = deepCopy(AI_PERSONALITIES[rint(0, AI_PERSONALITIES.length)], 2);\n        }\n\n        player.i = players.length;\n        players.push(player);\n    });\n\n    var regions = generateMap(players.length);\n    var gameState = {\n        p: players,\n        r: regions,\n        o: {}, t: {}, s: {}, c: {}, l: {},\n        m: {t: 1, p: 0, m: MOVE_ARMY, l: movesPerTurn}\n    };\n}\n\nfunction generateMap(playerCount) {\n    //TODO\n}",
 			"file": "main.js",
-			"file_size": 1255,
-			"file_write_time": 131809012610525321,
+			"file_size": 3022,
+			"file_write_time": 131809994665879890,
 			"settings":
 			{
-				"buffer_size": 1182,
+				"buffer_size": 3026,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "lib_ui.js",
+			"file": "ui.css",
 			"settings":
 			{
-				"buffer_size": 1165,
+				"buffer_size": 313,
 				"encoding": "UTF-8",
-				"line_ending": "Windows"
+				"line_ending": "Unix"
 			}
 		},
 		{
@@ -60,7 +51,8 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 624,
+				"buffer_size": 676,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -129,6 +121,8 @@
 	],
 	"file_history":
 	[
+		"/C/Users/wormh/workspace/compact-space-conflict/lib_ui.js",
+		"/C/Users/wormh/workspace/compact-space-conflict/lib.js",
 		"/C/Users/wormh/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/SublimeCodeIntel.sublime-settings",
 		"/C/Users/wormh/AppData/Roaming/Sublime Text 3/Packages/User/SublimeCodeIntel.sublime-settings",
 		"/C/Users/wormh/AppData/Roaming/Sublime Text 3/Packages/SublimeCodeIntel/Default (Windows).sublime-keymap",
@@ -152,6 +146,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"gameSetup",
+			".p",
 			"gameState.d",
 			"player.u",
 			"uiPickMove",
@@ -182,7 +178,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7123,
+						"buffer_size": 305,
 						"regions":
 						{
 						},
@@ -191,1299 +187,64 @@
 						],
 						"settings":
 						{
-							"current_file": "C:\\Users\\wormh\\workspace\\compact-conflict\\erisk.js",
+							"current_file": "C:\\Users\\wormh\\workspace\\compact-space-conflict\\main.js",
 							"git_gutter_is_enabled": false,
 							"outline_rename_mode": false,
 							"symkeys":
 							[
 								[
-									928,
-									939
+									850,
+									875
 								],
 								[
-									2819,
-									2842
+									1147,
+									1171
 								],
 								[
-									2967,
-									2991
+									1188,
+									1213
 								],
 								[
-									3154,
-									3174
+									1230,
+									1260
 								],
 								[
-									3362,
-									3391
+									1277,
+									1314
 								],
 								[
-									3531,
-									3551
+									1467,
+									1502
 								],
 								[
-									3718,
-									3751
+									1661,
+									1677
 								],
 								[
-									3860,
-									3874
+									2145,
+									2177
 								],
 								[
-									3982,
-									4018
+									2219,
+									2258
 								],
 								[
-									4289,
-									4309
-								],
-								[
-									4448,
-									4480
-								],
-								[
-									4637,
-									4667
-								],
-								[
-									4689,
-									4700
-								],
-								[
-									4940,
-									4954
-								],
-								[
-									5144,
-									5177
-								],
-								[
-									5569,
-									5606
-								],
-								[
-									5824,
-									5858
-								],
-								[
-									6037,
-									6068
-								],
-								[
-									6134,
-									6149
-								],
-								[
-									6304,
-									6343
-								],
-								[
-									6410,
-									6434
-								],
-								[
-									6465,
-									6489
-								],
-								[
-									6521,
-									6565
-								],
-								[
-									6993,
-									7017
-								],
-								[
-									7111,
-									7122
-								],
-								[
-									7307,
-									7331
-								],
-								[
-									7385,
-									7399
-								],
-								[
-									7524,
-									7548
-								],
-								[
-									7583,
-									7597
-								],
-								[
-									7713,
-									7741
-								],
-								[
-									7919,
-									7947
-								],
-								[
-									7980,
-									8002
-								],
-								[
-									8033,
-									8048
-								],
-								[
-									8165,
-									8186
-								],
-								[
-									8202,
-									8220
-								],
-								[
-									8658,
-									8691
-								],
-								[
-									8964,
-									8974
-								],
-								[
-									10142,
-									10165
-								],
-								[
-									10400,
-									10425
-								],
-								[
-									10512,
-									10525
-								],
-								[
-									10680,
-									10716
-								],
-								[
-									10839,
-									10850
-								],
-								[
-									10961,
-									10972
-								],
-								[
-									11210,
-									11223
-								],
-								[
-									11362,
-									11390
-								],
-								[
-									11630,
-									11659
-								],
-								[
-									11701,
-									11714
-								],
-								[
-									11837,
-									11848
-								],
-								[
-									12366,
-									12397
-								],
-								[
-									12457,
-									12468
-								],
-								[
-									12590,
-									12638
-								],
-								[
-									12694,
-									12705
-								],
-								[
-									12816,
-									12840
-								],
-								[
-									13015,
-									13052
-								],
-								[
-									13182,
-									13220
-								],
-								[
-									13563,
-									13615
-								],
-								[
-									14056,
-									14094
-								],
-								[
-									14518,
-									14541
-								],
-								[
-									15549,
-									15572
-								],
-								[
-									16008,
-									16032
-								],
-								[
-									16063,
-									16086
-								],
-								[
-									16299,
-									16373
-								],
-								[
-									16418,
-									16441
-								],
-								[
-									16705,
-									16727
-								],
-								[
-									16767,
-									16783
-								],
-								[
-									17368,
-									17403
-								],
-								[
-									17546,
-									17562
-								],
-								[
-									18400,
-									18446
-								],
-								[
-									18922,
-									18976
-								],
-								[
-									19063,
-									19095
-								],
-								[
-									20414,
-									20446
-								],
-								[
-									20667,
-									20700
-								],
-								[
-									20844,
-									20860
-								],
-								[
-									21047,
-									21078
-								],
-								[
-									21961,
-									21988
-								],
-								[
-									22181,
-									22205
-								],
-								[
-									22357,
-									22392
-								],
-								[
-									22488,
-									22505
-								],
-								[
-									24009,
-									24042
-								],
-								[
-									24145,
-									24166
-								],
-								[
-									24318,
-									24328
-								],
-								[
-									24789,
-									24825
-								],
-								[
-									24993,
-									25024
-								],
-								[
-									25152,
-									25169
-								],
-								[
-									25638,
-									25648
-								],
-								[
-									25935,
-									25971
-								],
-								[
-									26929,
-									26944
-								],
-								[
-									27466,
-									27491
-								],
-								[
-									27922,
-									27941
-								],
-								[
-									28748,
-									28793
-								],
-								[
-									28855,
-									28865
-								],
-								[
-									29320,
-									29356
-								],
-								[
-									30159,
-									30212
-								],
-								[
-									31871,
-									31903
-								],
-								[
-									31932,
-									31961
-								],
-								[
-									32384,
-									32401
-								],
-								[
-									33076,
-									33105
-								],
-								[
-									33141,
-									33158
-								],
-								[
-									33844,
-									33878
-								],
-								[
-									34503,
-									34526
-								],
-								[
-									36515,
-									36546
-								],
-								[
-									36599,
-									36622
-								],
-								[
-									37066,
-									37099
-								],
-								[
-									37368,
-									37412
-								],
-								[
-									37461,
-									37471
-								],
-								[
-									37736,
-									37746
-								],
-								[
-									37835,
-									37845
-								],
-								[
-									37898,
-									37908
-								],
-								[
-									37962,
-									37972
-								],
-								[
-									38036,
-									38062
-								],
-								[
-									38168,
-									38211
-								],
-								[
-									38419,
-									38451
-								],
-								[
-									38469,
-									38479
-								],
-								[
-									38615,
-									38625
-								],
-								[
-									38679,
-									38704
-								],
-								[
-									38722,
-									38732
-								],
-								[
-									39256,
-									39288
-								],
-								[
-									39330,
-									39369
-								],
-								[
-									40095,
-									40130
-								],
-								[
-									40997,
-									41017
-								],
-								[
-									41372,
-									41403
-								],
-								[
-									41454,
-									41477
-								],
-								[
-									41529,
-									41552
-								],
-								[
-									41611,
-									41634
-								],
-								[
-									41845,
-									41855
-								],
-								[
-									42017,
-									42040
-								],
-								[
-									42290,
-									42300
-								],
-								[
-									42431,
-									42441
-								],
-								[
-									42481,
-									42497
-								],
-								[
-									42701,
-									42737
-								],
-								[
-									42770,
-									42791
-								],
-								[
-									42907,
-									42938
-								],
-								[
-									43369,
-									43409
-								],
-								[
-									43706,
-									43760
-								],
-								[
-									44500,
-									44542
-								],
-								[
-									45454,
-									45483
-								],
-								[
-									45563,
-									45601
-								],
-								[
-									45968,
-									45984
-								],
-								[
-									46344,
-									46387
-								],
-								[
-									46555,
-									46603
-								],
-								[
-									46757,
-									46788
-								],
-								[
-									47384,
-									47427
-								],
-								[
-									47943,
-									48008
-								],
-								[
-									48313,
-									48334
-								],
-								[
-									49411,
-									49440
-								],
-								[
-									49675,
-									49716
-								],
-								[
-									50140,
-									50156
-								],
-								[
-									50476,
-									50495
-								],
-								[
-									50818,
-									50894
-								],
-								[
-									51144,
-									51186
-								],
-								[
-									51328,
-									51364
-								],
-								[
-									51916,
-									51933
-								],
-								[
-									52184,
-									52223
-								],
-								[
-									52557,
-									52601
-								],
-								[
-									52808,
-									52827
-								],
-								[
-									53693,
-									53712
-								],
-								[
-									53858,
-									53869
-								],
-								[
-									54110,
-									54159
-								],
-								[
-									54431,
-									54450
-								],
-								[
-									55305,
-									55357
-								],
-								[
-									55927,
-									55957
-								],
-								[
-									56369,
-									56412
-								],
-								[
-									56878,
-									56905
-								],
-								[
-									57102,
-									57112
-								],
-								[
-									57324,
-									57338
-								],
-								[
-									58206,
-									58237
-								],
-								[
-									58306,
-									58322
-								],
-								[
-									58366,
-									58382
-								],
-								[
-									58600,
-									58614
-								],
-								[
-									59368,
-									59410
-								],
-								[
-									59437,
-									59447
-								],
-								[
-									59707,
-									59775
-								],
-								[
-									60500,
-									60518
-								],
-								[
-									60923,
-									60934
-								],
-								[
-									61688,
-									61724
-								],
-								[
-									62546,
-									62561
-								],
-								[
-									63876,
-									63893
-								],
-								[
-									64037,
-									64047
-								],
-								[
-									64811,
-									64882
-								],
-								[
-									65075,
-									65120
-								],
-								[
-									66073,
-									66097
-								],
-								[
-									66463,
-									66492
-								],
-								[
-									67467,
-									67502
-								],
-								[
-									67631,
-									67647
-								],
-								[
-									67805,
-									67832
-								],
-								[
-									67853,
-									67863
-								],
-								[
-									68610,
-									68646
-								],
-								[
-									68715,
-									68745
-								],
-								[
-									69041,
-									69057
-								],
-								[
-									69335,
-									69386
-								],
-								[
-									69521,
-									69556
-								],
-								[
-									69589,
-									69605
-								],
-								[
-									69681,
-									69712
-								],
-								[
-									69766,
-									69795
-								],
-								[
-									69907,
-									69935
-								],
-								[
-									69972,
-									70001
-								],
-								[
-									70037,
-									70065
-								],
-								[
-									70101,
-									70153
-								],
-								[
-									70199,
-									70215
-								],
-								[
-									70357,
-									70406
-								],
-								[
-									70536,
-									70552
-								],
-								[
-									70882,
-									70919
-								],
-								[
-									70946,
-									70962
-								],
-								[
-									71059,
-									71086
-								],
-								[
-									71130,
-									71164
-								],
-								[
-									71695,
-									71726
-								],
-								[
-									72066,
-									72100
-								],
-								[
-									72822,
-									72852
-								],
-								[
-									73032,
-									73054
-								],
-								[
-									73288,
-									73323
-								],
-								[
-									73421,
-									73446
-								],
-								[
-									73566,
-									73582
-								],
-								[
-									74212,
-									74246
-								],
-								[
-									74402,
-									74417
-								],
-								[
-									74602,
-									74681
-								],
-								[
-									74724,
-									74746
-								],
-								[
-									75038,
-									75059
-								],
-								[
-									75170,
-									75195
-								],
-								[
-									75484,
-									75515
-								],
-								[
-									75786,
-									75818
-								],
-								[
-									76044,
-									76078
-								],
-								[
-									76154,
-									76190
-								],
-								[
-									76270,
-									76291
-								],
-								[
-									76340,
-									76361
-								],
-								[
-									76478,
-									76508
-								],
-								[
-									76704,
-									76734
-								],
-								[
-									76903,
-									76936
-								],
-								[
-									76966,
-									76987
-								],
-								[
-									77182,
-									77197
-								],
-								[
-									77371,
-									77395
-								],
-								[
-									77782,
-									77809
-								],
-								[
-									77839,
-									77851
-								],
-								[
-									78258,
-									78268
-								],
-								[
-									78498,
-									78536
-								],
-								[
-									78794,
-									78836
-								],
-								[
-									78921,
-									78931
-								],
-								[
-									79028,
-									79039
-								],
-								[
-									79274,
-									79304
-								],
-								[
-									79385,
-									79418
-								],
-								[
-									79449,
-									79461
-								],
-								[
-									79741,
-									79761
-								],
-								[
-									79792,
-									79804
-								],
-								[
-									79877,
-									79912
-								],
-								[
-									79943,
-									79955
-								],
-								[
-									80067,
-									80102
-								],
-								[
-									80133,
-									80145
-								],
-								[
-									80226,
-									80248
-								],
-								[
-									80266,
-									80280
-								],
-								[
-									80403,
-									80415
-								],
-								[
-									80475,
-									80489
-								],
-								[
-									80593,
-									80626
-								],
-								[
-									81129,
-									81150
-								],
-								[
-									82099,
-									82124
-								],
-								[
-									82317,
-									82347
-								],
-								[
-									82444,
-									82466
-								],
-								[
-									82806,
-									82832
-								],
-								[
-									82850,
-									82860
+									2974,
+									3007
 								]
 							],
 							"symlist":
 							[
-								"function(n)",
-								"function rint(low,high)",
-								"function range(low,high)",
-								"function identity(x)",
-								"function deepCopy(obj, depth)",
-								"function(value, key)",
-								"function clamp(number, low, high)",
-								"function now()",
-								"function template(text, replacement)",
-								"function map(seq,fn)",
-								"function forEachProperty(obj,fn)",
-								"function for2d(x1,y1,x2,y2,fn)",
-								"function(x)",
-								"function $(id)",
-								"function elem(tag,attrs,contents)",
-								"function append(containerId, newHTML)",
-								"function setTransform(elem, value)",
-								"function onClickOrTap(elem, fn)",
-								"function(event)",
-								"function showOrHide(elementId, visible)",
-								"function hide(elementId)",
-								"function show(elementId)",
-								"function toggleClass(element, className, on)",
-								"function min(seq, keyFn)",
-								"function(e)",
-								"function max(seq, keyFn)",
-								"function(elem)",
-								"function sum(seq, keyFn)",
-								"function(elem)",
-								"function contains(seq, elem)",
-								"function pairwise(array, fn)",
-								"function(elem1, index)",
-								"function(elem2)",
-								"function shuffle(seq)",
-								"function(_, index)",
-								"function generateMap(playerCount)",
-								"function()",
-								"function shrink(bounds)",
-								"function overlaps(bounds)",
-								"function(x,y)",
-								"function makeRegionAt(index, bounds)",
-								"function(i)",
-								"function(i)",
-								"function(x,y)",
-								"function perturbedPoint(x,y)",
-								"function fillNeighbourLists()",
-								"function(x,y)",
-								"function(d)",
-								"function centerOfWeight(points)",
-								"function(p)",
-								"function transformPoints(points, xm, ym, xd, yd)",
-								"function(p)",
-								"function projectPoint(p)",
-								"function gradientStop(percent, color)",
-								"function makeGradient(id, light, dark)",
-								"function makePolygon(points, id, fill, stroke, clip)",
-								"function showMap(container, gameState)",
-								"function(player, index)",
-								"function(region, index)",
-								"function makeClipPaths()",
-								"function(region, index)",
-								"function makeRegionPolys(idPrefix, gradient, xm, ym, xd, yd, stroke, clip)",
-								"function(region, index)",
-								"function makeTemples()",
-								"function(temple)",
+								"function runSetupScreen()",
+								"function regenerateMap()",
+								"function prepareSetupUI()",
+								"function updateConfigButtons()",
+								"function prepareMainScreen(gameState)",
 								"function prepareIngameUI(gameState)",
 								"function(player)",
-								"function invokeUICallback(object, type, event)",
-								"function uiPickMove(player, state, reportMoveCallback)",
-								"uiCallbacks.c = function(region)",
-								"uiCallbacks.t = function(region)",
-								"uiCallbacks.s = function(soldier)",
-								"function(region)",
-								"uiCallbacks.b = function(which)",
-								"uiCallbacks.un = function()",
-								"function setCleanState()",
-								"function makeUpgradeButtons(temple)",
-								"function(upgrade)",
-								"function oneAtATime(duration, fn)",
-								"function runOneTask()",
-								"function()",
-								"function updateMapDisplay(gameState)",
-								"function(soldiers, regionIndex)",
-								"function(div, id)",
-								"function()",
-								"function updateRegionDisplay(region)",
-								"function(point)",
-								"function updateTooltips()",
-								"function(neighbour)",
-								"function showTooltipOver(region, text, width)",
-								"function()",
-								"function updateTempleDisplay(temple)",
-								"function updateSoldierDisplay(region, soldier, index)",
-								"function updateSoldierTooltips()",
-								"function(region, regionIndex)",
-								"function(soldier)",
-								"function updateFloatingText()",
-								"function(floater)",
-								"function updateIngameUI(gameState)",
-								"function(player, index)",
-								"function updateButtons(buttons)",
-								"function(button, index)",
-								"function updateDisplay(gameState)",
-								"function showBanner(background, text, delay)",
-								"function()",
-								"function()",
-								"function()",
-								"function()",
-								"function()",
-								"function transform(offset)",
-								"function spawnParticle(x, y, vx, vy, color)",
-								"function floatAway(elem, vx, vy)",
-								"function()",
-								"function()",
-								"function preserveAspect()",
-								"function()",
 								"function makeInitialState(setup)",
 								"function(playerController, playerIndex)",
-								"function distance(regionA, regionB)",
-								"function (neighbour)",
-								"function distanceScore(regions)",
-								"function randomRegion()",
-								"function setupTemples()",
-								"function(player, index)",
-								"function()",
-								"function(player, index)",
-								"function()",
-								"function()",
-								"function(region)",
-								"function updatedDistances(newTemple)",
-								"function(home, index)",
-								"function templeScore(newTemple)",
-								"function putTemple(region, soldierCount)",
-								"function aiPickMove(player, state, reportMoveCallback)",
-								"function shouldBuildSoldier(player, state)",
-								"function force(state, player)",
-								"function upgradeToBuild(player, state)",
-								"function(temple)",
-								"function templeDangerousness(state, temple)",
-								"function buildSoldierAtBestTemple(player, state)",
-								"function minMaxDoSomeWork(node)",
-								"function minMaxReturnFromChild(node, child)",
-								"function performMinMax(forPlayer, fromState, depth, moveCallback)",
-								"function doSomeWork()",
-								"function possibleMoves(state)",
-								"function addArmyMove(source, dest, count)",
-								"function(region)",
-								"function(neighbour)",
-								"function slidingBonus(state, startOfGameValue, endOfGameValue, dropOffPoint)",
-								"function heuristicForPlayer(player, state)",
-								"function adjustedRegionValue(region)",
-								"function (region)",
-								"function regionFullValue(state, region)",
-								"function regionThreat(state, player, region)",
-								"function(neighbour)",
-								"function(candidate)",
-								"function(r)",
-								"function regionOpportunity(state, player, region)",
-								"function(neighbour)",
-								"function pickMove(player, state, reportMoveCallback)",
-								"function makeMove(state, move)",
-								"function copyState(state, simulatingPlayer)",
-								"function playOneMove(state)",
-								"function()",
-								"function(move)",
-								"function afterMoveChecks(state)",
-								"function(player)",
-								"function(region)",
-								"function(p, r)",
-								"function addSoldiers(state, region, count)",
-								"function()",
-								"function moveSoldiers(state, fromRegion, toRegion, incomingSoldiers)",
-								"function (soldier)",
-								"function ()",
-								"function randomNumberForFight(index)",
-								"function(index)",
-								"function(soldier)",
-								"function()",
-								"function battleAnimationKeyframe(state, delay, soundCue, floatingTexts)",
-								"function buildUpgrade(state, region, upgrade)",
-								"function nextTurn(state)",
-								"function(temple, regionIndex)",
-								"function determineGameWinner(state)",
-								"function(player)",
-								"function showEndGame(state)",
-								"function()",
-								"function soldierCount(state, region)",
-								"function income(state, player)",
-								"function(temple)",
-								"function regionHasActiveArmy(state, player, region)",
-								"function regionCount(state, player)",
-								"function(region)",
-								"function temples(state, player)",
-								"function(temple, regionIndex)",
-								"function activePlayer(state)",
-								"function owner(state, region)",
-								"function cash(state, player)",
-								"function rawUpgradeLevel(state, player, upgradeType)",
-								"function(temple)",
-								"function upgradeLevel(state, player, upgradeType)",
-								"function(region)",
-								"function totalSoldiers(state, player)",
-								"function(region)",
-								"function soldierCost(state)",
-								"function templeInfo(state, temple)",
-								"function undoEnabled(gameState)",
-								"function performUndo(currentState)",
-								"function getSetupFromStorage()",
-								"function (value, name)",
-								"function storeSetupInLocalStorage()",
-								"function prepareSetupUI()",
-								"function(player)",
-								"function(playerIndex, buttonIndex)",
-								"function(index)",
-								"function buttonPanel(title, buttonIdPrefix, buttonLabels, additionalProperties)",
-								"function(label, index)",
-								"function(value, name)",
-								"function runSetupScreen()",
-								"uiCallbacks.b = function(which)",
-								"uiCallbacks.sb = function(event)",
-								"uiCallbacks.ai = function(aiLevel)",
-								"uiCallbacks.tc = function(turnCount)",
-								"function setupValid()",
-								"function(playerState)",
-								"function updateBottomButtons()",
-								"function updateConfigButtons()",
-								"function(controller, playerIndex)",
-								"function(buttonIndex)",
-								"function(index)",
-								"function regenerateMap()",
-								"function setupTitleScreen()",
-								"function(id)",
-								"function()",
-								"function switchTutorialCard(direction)",
-								"function setTitleScreenVisibility(visible)",
-								"function()",
-								"function ()",
-								"function lerp(alpha, from, to)",
-								"function adsr(a, d, s, r, sl, fn)",
-								"function(dt)",
-								"function wSin(pitch)",
-								"function(dt)",
-								"function wSlide(from, to, time, fn)",
-								"function(dt)",
-								"function wRamp(from, to, after, fn)",
-								"function(dt)",
-								"function wNotes(notes)",
-								"function(note)",
-								"function(dt)",
-								"function(note)",
-								"function makeBuffer(fn, len, vol)",
-								"function setupAudio()",
-								"function playSound(sound)",
-								"function updateSoundControls()",
-								"function toggleSound()",
-								"window.onload = function()",
-								"function()"
+								"function generateMap(playerCount)"
 							],
 							"syntax": "Packages/Outline/outline.hidden-tmLanguage"
 						},
@@ -1491,106 +252,78 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 1,
-					"file": "lib.js",
+					"file": "main.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6580,
+						"buffer_size": 3026,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								322,
-								322
+								839,
+								839
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ui.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 313,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								301,
+								301
 							]
 						],
 						"settings":
 						{
 							"git_gutter_is_enabled": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 504.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "main.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1182,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1007,
-								1007
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 452.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
 					"buffer": 3,
-					"file": "lib_ui.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1165,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								641,
-								641
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "/C/Users/wormh/workspace/compact-conflict/erisk.js",
 					"semi_transient": false,
 					"settings":
@@ -1602,8 +335,8 @@
 						"selection":
 						[
 							[
-								31745,
-								31756
+								72681,
+								72697
 							]
 						],
 						"settings":
@@ -1614,31 +347,33 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 15929.0,
+						"translation.y": 37635.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 624,
+						"buffer_size": 676,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								416,
+								427
 							]
 						],
 						"settings":
 						{
+							"auto_complete": false,
+							"git_gutter_is_enabled": true,
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -1647,7 +382,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -1692,8 +427,16 @@
 			1.0
 		]
 	},
-	"menu_visible": true,
+	"menu_visible": false,
 	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 126.0
+	},
+	"output.mdpopups":
 	{
 		"height": 0.0
 	},

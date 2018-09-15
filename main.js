@@ -29,8 +29,9 @@ var UNLIMITED_TURNS = 1000000, TURN_COUNTS = [9, 12, 15, UNLIMITED_TURNS];
 // == Application "states"
 var APP_SETUP_SCREEN = 0, APP_INGAME = 1;
 
-
-// === Game Setup
+////
+////
+//Game Setup
 
 function runSetupScreen() {
     // we're in setup now
